@@ -1,8 +1,7 @@
-i=int(input("enter a number:"))
-if(i<15):
-    print("i is smaller than 15")
-    print("i'm in if block")
+actual_cost=float(input("please enter the actual product price:"))
+sale_amount=float(input("please enter the sales amount:"))
+if(sale_amount>actual_cost):
+ amount=sale_amount-actual_cost
+ print("total profit={0}".format(amount))
 else:
-    print("i is greater than 15")
-    print("i'm in else block")
-    print("i'm not in if and not in else block")
+ print("no profit!!!")
